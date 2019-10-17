@@ -1,7 +1,18 @@
+---
+# front matter tells Jekyll to process Liquid
+my_number: 5
+title: SudoCode
+---
+
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ "hello world!" | upcase }}</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <p> {{ page.my_number }} </p>
+  </body>
 </html>
